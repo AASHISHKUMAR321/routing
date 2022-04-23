@@ -7,6 +7,8 @@ import { Computers } from "./Computers";
 import { Categoary } from "./Categoary";
 import { Contact } from "./Contact";
 import { Faq } from "./Faq";
+import { DetailsPage } from "./DetailsPage";
+import { NotFound } from "./NotFound";
 
 export const AllRoutes = () => {
   return (
@@ -19,6 +21,8 @@ export const AllRoutes = () => {
         <Route path="/category" element={<Categoary />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/detailPage/:id" element={<DetailsPage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
